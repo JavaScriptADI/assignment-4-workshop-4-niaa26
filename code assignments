@@ -1,0 +1,84 @@
+//1
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+console.log(numbers[2]); 
+numbers[4] = 15; 
+numbers.push(11); 
+numbers.shift(); 
+console.log(numbers);
+
+//2
+let fruits = ["mango", "grapes", "watermelon"];
+fruits.push("Orange");
+let lastItem = fruits.pop();
+fruits.unshift("Strawberry");
+let firstItem = fruits.shift();
+console.log(fruits, lastItem, firstItem);
+
+//3
+let colors = ["purple", "red", "black", "white", "yellow"];
+for (let color of colors) {
+    console.log(color);
+}
+
+//4
+let numbers = [1,2,3,4,5,6,7];
+numbers.splice(1,2); 
+numbers.splice(1, 0, 8, 9); 
+let newArray = numbers.slice(-3); 
+console.log(numbers, newArray);
+
+//5
+let names = ["mari", "lasha", "nino"];
+names.sort();
+console.log(names);
+names.reverse();
+console.log(names);
+
+//6
+let numbers = [2, 4, 6, 8, 10];
+console.log(numbers.indexOf(8)); 
+console.log(numbers.includes(6)); 
+console.log(numbers.findIndex(num => num > 7)); 
+
+let index = -1;
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 7) {
+        index = i;
+        break;
+    }
+}
+console.log(index);
+
+//7
+let grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+console.log(grid[1][2]); 
+grid[0][0] = 99; 
+console.log(grid);
+
+//8
+let array = [100, 90, 80, 70];
+let [first, second] = array;
+[first, second] = [second, first];
+console.log(first, second);
+
+//9
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combined = arr1.concat(arr2);
+let spreadCombined = [...arr1, ...arr2];
+console.log(combined, spreadCombined);
+
+//10
+let numbers = [6, 4, 8, 2, 3, 1, 5, 9, 7];
+numbers.reverse();
+console.log(numbers);
+numbers.sort((a, b) => b - a); 
+console.log(numbers);
+
+
+
+
