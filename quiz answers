@@ -1,0 +1,40 @@
+// What method would you use to add an element to the end of an array?
+
+.push(element)
+
+//How do you remove the first element from an array?
+
+.shift()
+
+//What is the difference between splice and slice?
+
+.splice(start, deleteCount, item1, item2, ...) cvlis ukve sheqmnil errays
+.slice(start, end) qmnis axal arrays ise rom dzvels ar sheexos
+
+//How do you find the length of an array?
+
+.length
+
+//How can you check if an array includes a certain element?
+
+.includes(element)
+
+//What is the result of calling sort on an array of numbers without a compare function?
+
+ricxvebs aqcevs stingebad
+
+//How do you create a copy of an array?
+
+[...array] or .slice()
+
+//How do you reverse the elements in an array?
+
+.reverse()
+
+//What method can you use to combine two arrays?
+
+.concat() or [...array1, ...array2]
+
+//How do you access a specific element in a 2D array?
+
+array[row][column]
